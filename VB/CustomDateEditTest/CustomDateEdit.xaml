@@ -5,6 +5,9 @@
     xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
     xmlns:dxet="http://schemas.devexpress.com/winfx/2008/xaml/editors/themekeys"
     xmlns:local="clr-namespace:CustomDateEditTest">
+    <dxe:DateEdit.StyleSettings>
+        <dxe:DateEditCalendarStyleSettings />
+    </dxe:DateEdit.StyleSettings>
     <dxe:DateEdit.Resources>
             <ControlTemplate x:Key="{dxet:DateEditThemeKey ResourceKey=CellButtonTemplate,IsThemeIndependent=true}" TargetType="{x:Type Button}">
             <Grid Width="Auto" Height="Auto" x:Name="grid" Margin="3,0,3,0" Cursor="Hand" Background="Transparent" SnapsToDevicePixels="True">
