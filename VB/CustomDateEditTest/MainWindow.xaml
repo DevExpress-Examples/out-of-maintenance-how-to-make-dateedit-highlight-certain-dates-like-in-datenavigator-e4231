@@ -1,33 +1,31 @@
-<Window 
-    x:Class="CustomDateEditTest.MainWindow" 
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+<dx:ThemedWindow
+    x:Class="CustomDateEditTest.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
     xmlns:local="clr-namespace:CustomDateEditTest"
-    Title="MainWindow" 
-    Height="200" 
-    Width="165"
-    >
-    <Window.Resources>
-        <Style x:Key="specialDateBorderStyle" TargetType="{x:Type Border}">
-            <Setter Property="Background">
-                <Setter.Value>
-                    <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
-                        <GradientStop Color="#3A9869"/>
-                        <GradientStop Color="#81E396" Offset="1"/>
-                    </LinearGradientBrush>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="Padding" Value="1,1,1,1"></Setter>
-            <Setter Property="CornerRadius" Value="5"></Setter>
-        </Style>
-    </Window.Resources>
-    <Grid>
-        <local:CustomDateEdit 
-            SpecialBorderStyle="{StaticResource specialDateBorderStyle}" 
-            SpecialDates="{Binding Dates, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}" 
-            VerticalAlignment="Center"
-            HorizontalAlignment="Left" 
-            x:Name="customDateEdit1" 
-            Width="150"/>
-    </Grid>
-</Window>
+    Title="MainWindow"
+    Width="200"
+    Height="200">
+
+    <dx:ThemedWindow.DataContext>
+        <local:MainViewModel />
+    </dx:ThemedWindow.DataContext>
+
+    <dxe:DateEdit
+        Width="150"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center">
+        <dxe:DateEdit.PopupContentTemplate>
+            <ControlTemplate>
+                <dxe:DateNavigator IsMultiSelect="False" SpecialDates="{Binding RelativeSource={RelativeSource Self}, Path=(dxe:BaseEdit.OwnerEdit).DataContext.Dates}">
+                    <dxe:DateNavigator.StyleSettings>
+                        <dxe:DateNavigatorOutlookStyleSettings />
+                    </dxe:DateNavigator.StyleSettings>
+                </dxe:DateNavigator>
+            </ControlTemplate>
+        </dxe:DateEdit.PopupContentTemplate>
+    </dxe:DateEdit>
+
+</dx:ThemedWindow>

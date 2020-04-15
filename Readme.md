@@ -7,11 +7,11 @@
 * [MainWindow.xaml.cs](./CS/CustomDateEditTest/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/CustomDateEditTest/MainWindow.xaml.vb))
 * [SpecialDateBorderStyleConverter.cs](./CS/CustomDateEditTest/SpecialDateBorderStyleConverter.cs) (VB: [SpecialDateBorderStyleConverter.vb](./VB/CustomDateEditTest/SpecialDateBorderStyleConverter.vb))
 <!-- default file list end -->
-# How to make DateEdit highlight certain dates like in DateNavigator
+# How to highlight certain dates in DateEdit
 
+In version **18.2** and newer, [DateEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.DateEdit) displays [DateNavigator](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.DateNavigator.DateNavigator) in its dropdown. You can customize it using a custom [PopupContentTemplate](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.PopupBaseEdit.PopupContentTemplate). We used this template to bind [SpecialDates](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.DateNavigator.DateNavigator.SpecialDates) to the `Dates` property within the `ViewModel` class.
 
-<p>By default, the DateNavigator control allows you to set a collection of special dates and highlight them in bold font.</p><p>This example illustrates how to enable similar behavior in DateEdit.</p><p>First, it is necessary to create a DateEdit descendant and customize the "{dxet:DateEditThemeKey ResourceKey=CellButtonTemplate}" template.</p><p>Then, register two dependency properties - the SpecialDates property that contains a list of dates and the SpecialBorderStyle property that should contain a custom border style for date highlighting.</p>
+```xml
+```
 
-<br/>
-
-
+It is also possible to set [DateNavigator.Appearance](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.DateNavigator.DateNavigator.Appearance?v=20.1) to customize the appearance of these dates in **v20.1**.
