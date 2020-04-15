@@ -1,11 +1,8 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [CustomDateEdit.xaml](./CS/CustomDateEditTest/CustomDateEdit.xaml) (VB: [CustomDateEdit.xaml](./VB/CustomDateEditTest/CustomDateEdit.xaml))
-* [CustomDateEdit.xaml.cs](./CS/CustomDateEditTest/CustomDateEdit.xaml.cs) (VB: [CustomDateEdit.xaml.vb](./VB/CustomDateEditTest/CustomDateEdit.xaml.vb))
 * [MainWindow.xaml](./CS/CustomDateEditTest/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/CustomDateEditTest/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/CustomDateEditTest/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/CustomDateEditTest/MainWindow.xaml.vb))
-* [SpecialDateBorderStyleConverter.cs](./CS/CustomDateEditTest/SpecialDateBorderStyleConverter.cs) (VB: [SpecialDateBorderStyleConverter.vb](./VB/CustomDateEditTest/SpecialDateBorderStyleConverter.vb))
+* [MainViewModel.cs](./CS/CustomDateEditTest/MainViewModel.cs) (VB: [MainViewModel.vb](./VB/CustomDateEditTest/MainViewModel.vb))
 <!-- default file list end -->
 # How to highlight certain dates in DateEdit
 
