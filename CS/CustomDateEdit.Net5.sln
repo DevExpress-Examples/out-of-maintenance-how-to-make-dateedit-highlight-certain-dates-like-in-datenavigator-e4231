@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CustomDateEditTest", "CustomDateEditTest\CustomDateEditTest.vbproj", "{9F713780-B1DE-4558-8387-FBCB8F198BF3}"
+# Visual Studio 16
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomDateEditTest", "CustomDateEditTest\CustomDateEditTest.Net5.csproj", "{9F713780-B1DE-4558-8387-FBCB8F198BF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
