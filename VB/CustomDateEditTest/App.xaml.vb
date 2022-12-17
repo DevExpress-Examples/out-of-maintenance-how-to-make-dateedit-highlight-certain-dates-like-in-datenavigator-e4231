@@ -1,7 +1,8 @@
-﻿Imports Application = System.Windows.Application
+Imports System.Windows
 
 Namespace CustomDateEditTest
-    Partial Public Class App
+
+    Public Partial Class App
         Inherits Application
 
     End Class

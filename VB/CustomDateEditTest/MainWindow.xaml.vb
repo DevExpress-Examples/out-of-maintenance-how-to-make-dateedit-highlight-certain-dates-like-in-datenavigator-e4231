@@ -1,11 +1,9 @@
-﻿Imports DevExpress.Xpf.Core
-
 Namespace CustomDateEditTest
-    Partial Public Class MainWindow
-        Inherits ThemedWindow
+
+    Public Partial Class MainWindow
 
         Public Sub New()
-            InitializeComponent()
+            Me.InitializeComponent()
         End Sub
     End Class
 End Namespace
